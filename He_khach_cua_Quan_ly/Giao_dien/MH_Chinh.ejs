@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body style="font-family:Arial;width:100%;box-sizing:border-box;
+              margin:0px;padding:0px;overflow-x:hidden" class="container-fluid">
+   
+        <div class="CUA_SO_PET" style="background-color:aliceblue;margin:10px">
+            <div class="btn PET" style="margin-left:0px">
+                <div class="btn TOM_TAT" style="color:blue;text-align:center">
+                    Mô hình - Công nghệ - Kỹ thuật
+                    <br /><b><i>Đồ Án Quản Lý Khách Sạn</i></b>
+                </div>
+            </div>
+            <div class="btn btn-outline-primary" style="background-color:white;color:blue">
+                  <%=Tieu_de%> 
+            </div>
+        </div>
+        <div class="CUA_SO_CHUC_NANG"  style="background-color:gray;margin:10px" >
+            <div class="DANH_SACH_CHUC_NANG">
+                <div class="btn  CHUC_NANG" >
+                    <form action="/MH_Chinh" method="post">
+                        <input name="Th_Ma_so_Chuc_nang" type="hidden" value="TRA_CUU" />
+                        <input name="Th_Chuoi_Tra_cuu" style="height:30px"  
+                               spellcheck="false" autocomplete="off"  />
+                    </form>
+                </div>
+                <div class="btn btn-danger" data-toggle="collapse" data-target="#ChucNangThongKe">
+                    Xem Báo Cáo Thống kê doanh thu theo năm
+                </div>
+            </div>
+        </div>
+        <div class="CUA_SO_NHAP_LIEU">            
+            <form action="/Thong_ke" method="post" id="ChucNangThongKe" class="collapse">
+                            <input name="Th_Ma_so_Chuc_nang" type="hidden" value="ChucNangThongKe" />
+                            Thống kê doanh thu theo năm: <input name="Th_Nam" spellcheck="false" autocomplete="off" />
+                            <button class="btn btn-primary" type="submit">Xem Báo Cáo</button>
+            </form>
+        </div>
+        <div class="CUA_SO_KET_QUA" style="background-color:white;margin:10px"  >
+           <%-Chuoi_HTML_Ket_qua%>
+        </div>
+   
+
+
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous">
+  </script>
